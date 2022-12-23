@@ -102,7 +102,7 @@ class KeyboardWidget extends StatelessWidget {
                 cb: this.callBack,
               ),
               ButtonWidget(
-                text: ",",
+                text: ".",
                 cb: this.callBack,
               ),
               ButtonWidget.operation(
