@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class DisplayWidget extends StatelessWidget {
@@ -16,7 +14,7 @@ class DisplayWidget extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Container(
-        decoration: BoxDecoration(color: Color.fromRGBO(48, 48, 48, 1)),
+        decoration: const BoxDecoration(color: Color.fromRGBO(48, 48, 48, 1)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.end,
@@ -29,7 +27,7 @@ class DisplayWidget extends StatelessWidget {
                 maxFontSize: 80,
                 maxLines: 1,
                 textAlign: TextAlign.end,
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.w100,
                   decoration: TextDecoration.none,
                   fontSize: 80,

@@ -9,7 +9,7 @@ class KeyboardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 500,
       child: Column(
         children: [
@@ -17,97 +17,97 @@ class KeyboardWidget extends StatelessWidget {
             buttons: [
               ButtonWidget.big(
                 text: "AC",
-                cb: this.callBack,
+                cb: callBack,
                 color: ButtonWidget.DARK,
               ),
               ButtonWidget(
                 text: "%",
-                cb: this.callBack,
+                cb: callBack,
                 color: ButtonWidget.DARK,
               ),
               ButtonWidget.operation(
                 text: "/",
-                cb: this.callBack,
+                cb: callBack,
               ),
             ],
           ),
-          SizedBox(height: 1),
+          const SizedBox(height: 1),
           ButtonRowWidget(
             buttons: [
               ButtonWidget(
                 text: "7",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: "8",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: "9",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget.operation(
                 text: "X",
-                cb: this.callBack,
+                cb: callBack,
               ),
             ],
           ),
-          SizedBox(height: 1),
+          const SizedBox(height: 1),
           ButtonRowWidget(
             buttons: [
               ButtonWidget(
                 text: "4",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: "5",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: "6",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget.operation(
                 text: "-",
-                cb: this.callBack,
+                cb: callBack,
               ),
             ],
           ),
-          SizedBox(height: 1),
+          const SizedBox(height: 1),
           ButtonRowWidget(
             buttons: [
               ButtonWidget(
                 text: "1",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: "2",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: "3",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget.operation(
                 text: "+",
-                cb: this.callBack,
+                cb: callBack,
               ),
             ],
           ),
-          SizedBox(height: 1),
+          const SizedBox(height: 1),
           ButtonRowWidget(
             buttons: [
               ButtonWidget.big(
                 text: "0",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget(
                 text: ".",
-                cb: this.callBack,
+                cb: callBack,
               ),
               ButtonWidget.operation(
                 text: "=",
-                cb: this.callBack,
+                cb: callBack,
               ),
             ],
           ),

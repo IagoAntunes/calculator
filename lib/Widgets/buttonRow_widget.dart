@@ -1,7 +1,5 @@
 import 'package:appcalculator/Widgets/button_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class ButtonRowWidget extends StatelessWidget {
   const ButtonRowWidget({super.key, required this.buttons});
@@ -19,7 +17,7 @@ class ButtonRowWidget extends StatelessWidget {
             list.isEmpty
                 ? list.add(element)
                 : list.addAll(
-                    [SizedBox(width: 1), element],
+                    [const SizedBox(width: 1), element],
                   );
             return list;
           },

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class ButtonWidget extends StatelessWidget {
   const ButtonWidget({
@@ -25,8 +23,11 @@ class ButtonWidget extends StatelessWidget {
     this.big = false,
   });
 
+  // ignore: constant_identifier_names
   static const DARK = Color.fromRGBO(82, 82, 82, 1);
+  // ignore: constant_identifier_names
   static const DEFAULT = Color.fromRGBO(112, 112, 112, 1);
+  // ignore: constant_identifier_names
   static const OPERATION = Color.fromRGBO(250, 158, 13, 1);
 
   final String text;
@@ -39,11 +40,11 @@ class ButtonWidget extends StatelessWidget {
     return Expanded(
       flex: big ? 2 : 1,
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(backgroundColor: this.color),
+        style: ElevatedButton.styleFrom(backgroundColor: color),
         onPressed: () => cb(text),
         child: Text(
           text,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 32,
             fontWeight: FontWeight.w200,
